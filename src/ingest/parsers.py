@@ -22,7 +22,7 @@ class Page:
     text: str
 
 
-SUPPORTED_SUFFIXES = {".pdf", ".docx", ".md", ".markdown", ".txt"}
+SUPPORTED_SUFFIXES = {".pdf", ".docx", ".md", ".markdown", ".txt", ".xlsx", ".xlsm"}
 
 
 def parse_pdf(path: Path) -> list[Page]:
@@ -137,6 +137,32 @@ def parse_txt(path: Path) -> list[Page]:
     return [Page(source=path.name, section="body", text=text)]
 
 
+def parse_xlsx(path: Path) -> list[Page]:
+    """One Page per worksheet; rows rendered as 'cell | cell | ...'.
+
+    ``data_only=True`` returns computed values instead of raw formulas, and
+    ``read_only=True`` keeps memory low on large workbooks. Empty cells and
+    empty rows are dropped so sparse sheets don't produce noise.
+    """
+    from openpyxl import load_workbook
+
+    wb = load_workbook(str(path), read_only=True, data_only=True)
+    pages: list[Page] = []
+    try:
+        for ws in wb.worksheets:
+            lines: list[str] = []
+            for row in ws.iter_rows(values_only=True):
+                cells = [str(c).strip() for c in row if c is not None and str(c).strip()]
+                if cells:
+                    lines.append(" | ".join(cells))
+            text = "\n".join(lines)
+            if text.strip():
+                pages.append(Page(source=path.name, section=ws.title, text=text))
+    finally:
+        wb.close()
+    return pages
+
+
 def parse_file(path: Path) -> list[Page]:
     """Dispatch by file extension. Unknown types raise ValueError."""
     suffix = path.suffix.lower()
@@ -148,6 +174,8 @@ def parse_file(path: Path) -> list[Page]:
         return parse_markdown(path)
     if suffix == ".txt":
         return parse_txt(path)
+    if suffix in {".xlsx", ".xlsm"}:
+        return parse_xlsx(path)
     raise ValueError(f"Unsupported file type: {path.name} ({suffix})")
 
 

@@ -18,7 +18,7 @@ actually improved retrieval.
 ## 1. What it does
 
 Ask a question → the system retrieves the most relevant chunks of SUSC documents
-(hybrid keyword + semantic search) → an LLM answers using only those chunks,
+(semantic search, with keyword/hybrid options evaluated) → an LLM answers using only those chunks,
 citing each as `[1]`, `[2]` → if nothing relevant is found, it refuses instead
 of guessing.
 
@@ -48,7 +48,7 @@ ONLINE — Vercel (one Python serverless function, slim deps, no PyTorch)
   question → api/index.py
     1. load index/ once per cold start (in-memory, read-only)
     2. embed the question with fastembed (ONNX, same model as offline)
-    3. dense (NumPy cosine) + BM25 → fuse with RRF → top-5
+    3. retrieve top-5 (dense NumPy cosine by default; hybrid RRF / BM25 selectable)
     4. build prompt (rules + numbered sources + question)
     5. call Groq (free tier) for the answer
     6. return {answer, sources[], refused, timings_ms}
@@ -130,7 +130,7 @@ full dense/hybrid pipeline stays in the local ablation study.
 |---|---|
 | Precompute index offline, bundle small files | Vercel functions are stateless, read-only at request time, size-capped. A few-hundred-chunk corpus needs no DB — NumPy cosine + BM25 in memory is faster and simpler. |
 | sentence-transformers offline, fastembed online | Same model (`bge-small-en-v1.5`), one vector space. fastembed is ONNX (no PyTorch), so the live function stays small. |
-| Hybrid (dense + BM25 via RRF) in production, with BM25-only auto-fallback | Dense catches paraphrases; BM25 catches exact acronyms (EMR, role names). RRF fuses them without needing comparable score scales. If dense fails/doesn't fit, the engine degrades gracefully. |
+| **Dense** retrieval in production (chosen by ablation), with BM25-only auto-fallback | Hybrid and the reranker are fully implemented, but the ablation on the real corpus showed dense alone wins (see Evaluation). Dense is deployed; if `fastembed` fails or doesn't fit, the engine degrades gracefully to BM25-only. Mode is one config line / env var. |
 | Own recursive chunker (~120 lines) | Chunking is the biggest lever on quality; worth owning and explaining rather than hiding in a framework. |
 | Refuse below a confidence threshold, before the LLM | Cheap, deterministic hallucination guard. Threshold tuned on the eval set (Week 5). |
 
@@ -155,16 +155,15 @@ python -m src.eval.run_ablations                 # heavy; writes CSV + markdown
 
 ### Baseline results
 
-Measured on the **sample corpus** (17 chunks, 12 answerable questions), deployed
-config = hybrid. **These will change once you swap in the real SUSC corpus** —
-re-run `python -m src.eval.retrieval_eval --save` and update this table.
+Measured on the **real SUSC corpus** (11 files → 56 chunks; 36 answerable + 8
+unanswerable questions). Deployed config = **dense** (see ablation below).
+Re-run `python -m src.eval.retrieval_eval --save` after any corpus change.
 
-| Metric (hybrid) | Value |
-|---|---|
-| hit@1 | 0.833 |
-| hit@3 | 0.917 |
-| hit@5 | 1.000 |
-| MRR | 0.896 |
+| Mode | hit@1 | hit@3 | hit@5 | MRR |
+|---|---|---|---|---|
+| **dense (deployed)** | 0.667 | **0.861** | **0.917** | **0.773** |
+| hybrid | 0.639 | 0.833 | 0.833 | 0.736 |
+| BM25 | 0.500 | 0.694 | 0.833 | 0.625 |
 
 > Retrieval-only metrics (no API key). Answer-quality metrics (citation rate,
 > refusal accuracy, LLM-judge groundedness/correctness) run via
@@ -172,39 +171,42 @@ re-run `python -m src.eval.retrieval_eval --save` and update this table.
 
 ### Ablation table (local study)
 
-From `src/eval/runs/ablations_*.md` on the sample corpus. **Row E is the
-deployed configuration.**
+From `src/eval/runs/ablations_*.md` on the real corpus. **Row B is the deployed
+configuration.**
 
 | Config | Chunk size | Retrieval | Rerank | hit@3 | MRR | p50 retrieve (ms) |
 |---|---|---|---|---|---|---|
-| A | 1200 | dense | no | 0.917 | 0.933 | 69.7 |
-| B | 2000 | dense | no | 0.917 | 0.933 | 65.0 |
-| C | 3200 | dense | no | 0.917 | 0.933 | 66.7 |
-| D | 2000 | BM25 | no | 0.917 | 0.917 | 0.3 |
-| **E** | **2000** | **hybrid** | **no** | **1.000** | **0.944** | **64.0** ← deployed |
-| F | 2000 | hybrid | yes | 0.917 | 0.917 | 689.8 |
+| A | 1200 | dense | no | 0.861 | 0.772 | 18.7 |
+| **B** | **2000** | **dense** | **no** | **0.861** | **0.773** | **18.1** ← deployed |
+| C | 3200 | dense | no | 0.861 | 0.772 | 19.0 |
+| D | 2000 | BM25 | no | 0.694 | 0.625 | 0.2 |
+| E | 2000 | hybrid | no | 0.833 | 0.732 | 17.9 |
+| F | 2000 | hybrid | yes | 0.861 | 0.782 | 1431.6 |
 
-**What this shows (and why E is deployed):**
-- **Hybrid wins (E).** Dense alone misses q05 and BM25 alone misses q08; hybrid
-  recovers the union, reaching hit@3 = 1.0. This is the textbook case for RRF —
-  dense catches paraphrases, BM25 catches exact acronyms (EMR), and fusion keeps
-  both.
-- **The reranker (F) did not help here** and added ~10× latency (690 ms vs
-  64 ms). On this small, lexically-clean corpus the cross-encoder had nothing to
-  fix. Honest conclusion: **not worth deploying now** — but the harness is ready
-  to re-measure on the larger real corpus, where it may earn its place.
-- **Chunk size barely moved the needle** (A/B/C identical) because the sample
-  documents are short and single-topic per section; expect this to matter more
-  on longer real documents.
-- **BM25 is nearly free** (0.3 ms) and competitive — which is exactly why the
-  BM25-only production fallback is a legitimate, low-cost option if `fastembed`
-  ever doesn't fit.
+**What this shows (and why dense is deployed):**
+- **Dense wins on this corpus.** The SUSC documents are paraphrase-heavy training
+  prose, where semantic search excels. BM25's weaker keyword rankings (D, hit@3
+  0.69) actually *drag down* the RRF fusion, so plain hybrid (E, 0.83) is worse
+  than dense alone (B, 0.86). This is the honest opposite of the textbook "hybrid
+  always wins" — and exactly why the project measures instead of assuming.
+- **The reranker (F) recovers hybrid back to dense's hit@3 (0.861)** but costs
+  **~80× latency** (1432 ms vs 18 ms) and still doesn't beat plain dense. Clear
+  conclusion: **not worth deploying.**
+- **Chunk size is irrelevant here** (A/B/C identical at 0.861) — sections are
+  short and single-topic, so the splitter rarely has to cut mid-fact.
+- **BM25 stays as the production fallback** (0.2 ms, zero model) for the case
+  where `fastembed` doesn't fit Vercel's size limit — a graceful, documented
+  degradation, not the primary path.
+
+> Note: the deployed numbers use `fastembed` (ONNX) for queries; the ablation
+> uses `sentence-transformers` (PyTorch) offline. Same model, near-identical
+> vectors — the small print is documented rather than hidden.
 
 ### Deployment size
 
 `python scripts/estimate_api_size.py` estimates the online dependency closure at
 **~153 MB** (numpy ~54, onnxruntime ~48 being the largest), under the 250 MB
-limit — so the hybrid path should deploy. The authoritative check is still a
+limit — so the dense path (which uses `fastembed`) should deploy. The authoritative check is still a
 real Vercel build ([`scripts/size_check.md`](scripts/size_check.md)).
 
 ### Operational latency

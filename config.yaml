@@ -23,7 +23,12 @@ embedding:
   dim: 384                # bge-small / MiniLM output dimension
 
 retrieval:
-  mode: "hybrid"          # hybrid | dense | bm25  (prod default; overridable by env)
+  # Deployed default = dense. The ablation study on the real SUSC corpus showed
+  # dense-only beats hybrid here (paraphrase-heavy prose; weak BM25 signal drags
+  # down RRF fusion). Still uses fastembed online, and still auto-falls back to
+  # BM25-only if fastembed fails. Override per-deploy with the RETRIEVAL_MODE env
+  # var. Re-run `python -m src.eval.run_ablations` if the corpus changes a lot.
+  mode: "dense"           # hybrid | dense | bm25  (prod default; overridable by env)
   top_k: 5                # chunks passed to the LLM
   candidate_k: 20         # candidates each retriever contributes before fusion
   rrf_k: 60               # Reciprocal Rank Fusion constant (standard default)

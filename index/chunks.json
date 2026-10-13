@@ -390,6 +390,36 @@
     }
   },
   {
+    "id": "3cd4a51ca057d032",
+    "text": "[Intiaitive Name] Budget Forecast\nQuantity | Unit Price (RM) | Amount (RM)\nRevenue\n1.0\n2.0\n3.0\n4.0\nTotal Revenue | 0\nExpenses\n1.0\n2.0\n3.0\n4.0\nTotal Expenses | 0\nNet (TR-TE) | 0",
+    "source": "[Template] Financial Spreadsheet 26_27.xlsx",
+    "section": "Budget Forecast",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 176
+    }
+  },
+  {
+    "id": "8425a17a4a09c349",
+    "text": "Date | Particular | Payer | Plus (RM) | Minus (RM) | Remarks\nSum | 0 | 0\nNet Balance | 0",
+    "source": "[Template] Financial Spreadsheet 26_27.xlsx",
+    "section": "Transaction Log",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 88
+    }
+  },
+  {
+    "id": "cd56d627da263632",
+    "text": "[Intiaitive Name] Actual Budget Breakdown\nQuantity | Unit Price (RM) | Amount (RM)\nRevenue\n1.0 | 0\n2.0 | 0\n3.0 | 0\n4.0 | 0\n5.0 | 0\n6.0 | 0\nTotal Revenue | 0\nExpenses\n1.0 | 0\n2.0 | 0\n3.0 | 0\n4.0 | 0\n5.0 | 0\n6.0 | 0\nTotal Expenses | 0\nNet (TR-TE) | 0",
+    "source": "[Template] Financial Spreadsheet 26_27.xlsx",
+    "section": "Actual Budget Breakdown",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 248
+    }
+  },
+  {
     "id": "cd8b7f46c2434130",
     "text": "[General Meeting #]\nDATE\n{dd/mm/yyyy} | TIME\n{Time to time} | VENUE\n{Venue or platform}",
     "source": "[Template] General Meeting Minutes 26_27.docx",
@@ -517,6 +547,16 @@
     "chunk_index": 0,
     "metadata": {
       "char_len": 738
+    }
+  },
+  {
+    "id": "1a98d889c7b26cf3",
+    "text": "Event :\nTime :\nDate :\nVenue :\nProject Lead:\nCo-Lead:\nTimeline & Task Tracker\nWeek 6\nTask | PIC | Due Date | Status | Link (If applicable) | Remarks\nCompleted\nWeek 7\nTask | PIC | Due Date | Status | Remarks",
+    "source": "[Template] Timeline Task Tracker 26_27.xlsx",
+    "section": "Sheet1",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 205
     }
   }
 ]
