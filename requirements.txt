@@ -1,0 +1,44 @@
+# ===========================================================================
+# OFFLINE dependencies -- run on YOUR laptop only (never deployed to Vercel).
+# Heavy ML stack for building the index and running the ablation study.
+# Install into a local venv:  pip install -r requirements.txt
+#
+# The DEPLOYED function uses the slim api/requirements.txt instead.
+# ===========================================================================
+
+# --- Parsing ---
+pypdf==5.1.0
+python-docx==1.1.2
+
+# --- Embeddings (index build) ---
+sentence-transformers==3.3.1      # pulls torch (CPU) + transformers; large, laptop-only
+
+# --- Reranker (ablations, local only) ---
+# The cross-encoder reranker ships inside sentence-transformers (above).
+#
+# NOTE: ChromaDB is OPTIONAL and intentionally NOT listed here. It is only used
+# by src/retrieval/store_chroma.py (a local convenience); the ingestion pipeline
+# and the ablation study both use plain NumPy and do not need it. On Windows,
+# chromadb builds chroma-hnswlib from source and requires the MS Visual C++
+# Build Tools. If you want it, install it separately:
+#     pip install -r requirements-optional.txt
+
+# --- Shared retrieval/runtime (also in api/requirements.txt, pinned the same) ---
+numpy==2.1.3
+rank-bm25==0.2.2
+fastembed==0.5.1                  # ONNX query embedder; tested here, used in prod
+PyYAML==6.0.2
+
+# --- LLM client ---
+openai==1.57.4
+
+# --- API (local dev server + schema) ---
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# --- Dev / test / quality ---
+pytest==8.3.4
+ruff==0.8.4

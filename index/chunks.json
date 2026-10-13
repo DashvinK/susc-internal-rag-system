@@ -1,0 +1,172 @@
+[
+  {
+    "id": "520cd6c11d1c08c3",
+    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.\n> Replace with the real SUSC constitution before publishing.",
+    "source": "constitution.md",
+    "section": "SUSC Constitution (SAMPLE)",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 136
+    }
+  },
+  {
+    "id": "c634d776ce35751e",
+    "text": "The organisation shall be known as the Sunway University Student Council,\nabbreviated SUSC. Its purpose is to represent the student body, organise\nextracurricular events, and support member welfare across the academic year.",
+    "source": "constitution.md",
+    "section": "Article 1 — Name and Purpose",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 223
+    }
+  },
+  {
+    "id": "8e2638a5f1d685b3",
+    "text": "Membership is open to all enrolled students. Ordinary members may attend events\nand vote in the annual general meeting. Committee members are appointed through\nthe Executive Member Recruitment process and hold additional responsibilities.",
+    "source": "constitution.md",
+    "section": "Article 2 — Membership",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 238
+    }
+  },
+  {
+    "id": "7a54afa779047719",
+    "text": "The committee is led by the President, who serves a term of one academic year\nand may be re-elected once. The President is supported by the Vice President,\nthe Director of Human Resources, the Director of Extracurricular, and the\nTreasurer.\n\nThe Director of Extracurricular oversees all club activities and is responsible\nfor event logistics, including venue booking and equipment. The Treasurer is\nresponsible for the budget and for approving reimbursement claims.",
+    "source": "constitution.md",
+    "section": "Article 3 — Committee Structure and Roles",
+    "chunk_index": 3,
+    "metadata": {
+      "char_len": 465
+    }
+  },
+  {
+    "id": "42acb919a3e4a263",
+    "text": "A general meeting requires a quorum of fifty percent of committee members plus\none. Decisions are made by simple majority of those present, except amendments\nto this constitution.",
+    "source": "constitution.md",
+    "section": "Article 4 — Meetings and Quorum",
+    "chunk_index": 4,
+    "metadata": {
+      "char_len": 179
+    }
+  },
+  {
+    "id": "02a083a542ecc381",
+    "text": "This constitution may be amended only by a two-thirds majority vote of the full\ncommittee at a meeting where quorum is met. Proposed amendments must be\ncirculated to all committee members at least seven days before the vote.",
+    "source": "constitution.md",
+    "section": "Article 5 — Amendments",
+    "chunk_index": 5,
+    "metadata": {
+      "char_len": 224
+    }
+  },
+  {
+    "id": "caa2fe1cacb0c6c2",
+    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
+    "source": "emr_process.md",
+    "section": "Executive Member Recruitment (EMR) (SAMPLE)",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 75
+    }
+  },
+  {
+    "id": "719d241692335423",
+    "text": "EMR stands for Executive Member Recruitment. It is the annual process by which\nSUSC selects new committee members. EMR runs at the start of the first semester\nand is open to all ordinary members in good standing.",
+    "source": "emr_process.md",
+    "section": "Overview",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 212
+    }
+  },
+  {
+    "id": "bd8d0ef69dcae4c1",
+    "text": "After applications close, candidates are shortlisted before interviews. The\nshortlisting process is chaired by the Director of Human Resources, who\nconvenes a panel of at least three committee members. Shortlisting is based on\nthe written application, prior involvement in SUSC events, and availability for\nthe full term.\n\nShortlisted candidates are notified by email within five working days of the\npanel's decision.",
+    "source": "emr_process.md",
+    "section": "Shortlisting",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 417
+    }
+  },
+  {
+    "id": "4e7d702e35deccd7",
+    "text": "If a committee position is vacated mid-semester, an emergency EMR may be\nconvened. Emergency recruitment follows the same shortlisting rules but may be\ncompleted within two weeks. The President must approve any emergency EMR before\nit begins.",
+    "source": "emr_process.md",
+    "section": "Emergency Recruitment",
+    "chunk_index": 3,
+    "metadata": {
+      "char_len": 242
+    }
+  },
+  {
+    "id": "a958d80da0c5420c",
+    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
+    "source": "event_sop.md",
+    "section": "Event Standard Operating Procedure (SAMPLE)",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 75
+    }
+  },
+  {
+    "id": "eb4779ddbbc07a2a",
+    "text": "Every SUSC event begins with a written proposal. The proposal must be submitted\nto the Director of Extracurricular at least fourteen days before the event date.\nIt must include the objective, budget estimate, venue, and expected attendance.\nProposals submitted late may be rejected if resources cannot be arranged in time.",
+    "source": "event_sop.md",
+    "section": "Event Proposals",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 322
+    }
+  },
+  {
+    "id": "df5b7c52f11147f9",
+    "text": "A minimum of three committee members must be present to run an event booth at\nany time during opening hours. Each booth must display the SUSC banner and a\nprinted copy of the event schedule. Cash handling at booths is the\nresponsibility of the Treasurer or a delegate approved in writing by the\nTreasurer.",
+    "source": "event_sop.md",
+    "section": "Booth Operations",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 305
+    }
+  },
+  {
+    "id": "cecd4d0182118438",
+    "text": "Reimbursement claims for event expenses must be submitted within thirty days of\nthe event, with original receipts attached. Claims without receipts will not be\nprocessed. The Treasurer reviews all claims and approves payment within fourteen\nworking days of a valid submission.",
+    "source": "event_sop.md",
+    "section": "Reimbursement and Claims",
+    "chunk_index": 3,
+    "metadata": {
+      "char_len": 276
+    }
+  },
+  {
+    "id": "b389838f901f33ed",
+    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
+    "source": "orientation.md",
+    "section": "Orientation and Event Logistics (SAMPLE)",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 75
+    }
+  },
+  {
+    "id": "bafb1984236bd143",
+    "text": "SUSC orientation is held during the first week of each semester. It introduces\nnew students to the council, its events, and the membership sign-up process.\nOrientation sessions are run by the Director of Extracurricular together with\nvolunteers recruited through EMR.",
+    "source": "orientation.md",
+    "section": "Orientation Schedule",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 267
+    }
+  },
+  {
+    "id": "62a28ba39455eb8d",
+    "text": "Venue bookings for all SUSC events are arranged by the Director of\nExtracurricular through the university's facilities office. Equipment such as\nsound systems, projectors, and tables must be reserved at least five working\ndays in advance. Any equipment damaged during an event must be reported to the\nDirector of Extracurricular within twenty-four hours.",
+    "source": "orientation.md",
+    "section": "Logistics and Equipment",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 354
+    }
+  }
+]

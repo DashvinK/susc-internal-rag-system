@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SUSC Knowledge Assistant</title>
+  <style>
+    :root {
+      --bg: #0f1115; --panel: #171a21; --border: #262b36; --text: #e6e9ef;
+      --muted: #9aa4b2; --accent: #5b8cff; --accent-weak: #22304f;
+      --ok: #3ecf8e; --warn: #f0b429; --radius: 12px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f7f9; --panel: #ffffff; --border: #e3e6ec; --text: #1b1f27;
+        --muted: #5a6472; --accent: #2f6bff; --accent-weak: #e7eeff; --ok: #0a8f5b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 80px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    .sub { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+    .card { background: var(--panel); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px; }
+    .row { display: flex; gap: 8px; }
+    textarea {
+      flex: 1; resize: vertical; min-height: 56px; padding: 12px 14px;
+      background: var(--bg); color: var(--text); border: 1px solid var(--border);
+      border-radius: 10px; font: inherit;
+    }
+    textarea:focus { outline: 2px solid var(--accent); border-color: transparent; }
+    button {
+      padding: 0 18px; border: 0; border-radius: 10px; background: var(--accent);
+      color: #fff; font-weight: 600; cursor: pointer; white-space: nowrap;
+    }
+    button:disabled { opacity: .55; cursor: default; }
+    .hint { color: var(--muted); font-size: 13px; margin-top: 8px; }
+    #answer { margin-top: 20px; white-space: pre-wrap; }
+    .refused { color: var(--warn); }
+    .sources { margin-top: 16px; }
+    details { border: 1px solid var(--border); border-radius: 10px;
+              padding: 8px 12px; margin-top: 8px; background: var(--panel); }
+    summary { cursor: pointer; color: var(--muted); font-size: 14px; }
+    .src { border-top: 1px dashed var(--border); padding: 10px 0; }
+    .src:first-child { border-top: 0; }
+    .src b { color: var(--accent); }
+    .timings { color: var(--muted); font-size: 12px; margin-top: 12px;
+               font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid #fff;
+               border-top-color: transparent; border-radius: 50%; animation: spin .8s linear infinite;
+               vertical-align: -2px; margin-right: 6px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>SUSC Knowledge Assistant</h1>
+    <p class="sub">Ask about SUSC documents. Answers come only from the indexed
+      sources, with citations. It refuses when the answer isn't in the documents.</p>
+
+    <div class="card">
+      <div class="row">
+        <textarea id="q" placeholder="e.g. What does EMR stand for in the SUSC context?"
+                  maxlength="1000"></textarea>
+        <button id="ask">Ask</button>
+      </div>
+      <div class="hint" id="hint">Press Ctrl/Cmd + Enter to submit.</div>
+    </div>
+
+    <div id="answer"></div>
+    <div class="sources" id="sources"></div>
+    <div class="timings" id="timings"></div>
+  </div>
+
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const qEl = $("q"), askBtn = $("ask");
+
+    async function ask() {
+      const question = qEl.value.trim();
+      if (!question) return;
+      askBtn.disabled = true;
+      $("answer").innerHTML = '<span class="spinner"></span>Thinking…';
+      $("sources").innerHTML = "";
+      $("timings").textContent = "";
+
+      try {
+        const res = await fetch("/api/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question }),
+        });
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.detail || ("HTTP " + res.status));
+        }
+        const data = await res.json();
+        renderAnswer(data);
+      } catch (e) {
+        $("answer").innerHTML = '<span class="refused">Error: ' + escapeHtml(e.message) + "</span>";
+      } finally {
+        askBtn.disabled = false;
+      }
+    }
+
+    function renderAnswer(data) {
+      const a = $("answer");
+      a.textContent = data.answer;
+      if (data.refused) a.classList.add("refused"); else a.classList.remove("refused");
+
+      const s = $("sources");
+      if (data.sources && data.sources.length) {
+        const items = data.sources.map(
+          (x) => `<div class="src"><b>[${x.n}]</b> ${escapeHtml(x.source)} &rsaquo; `
+                 + `${escapeHtml(x.section)} <span style="color:var(--muted)">`
+                 + `(score ${x.score})</span></div>`
+        ).join("");
+        s.innerHTML = `<details open><summary>${data.sources.length} source(s)</summary>${items}</details>`;
+      }
+
+      const t = data.timings_ms || {};
+      $("timings").textContent =
+        `retrieve ${t.retrieve ?? "?"} ms · generate ${t.generate ?? "?"} ms · total ${t.total ?? "?"} ms`;
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/[&<>"']/g, (c) =>
+        ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    }
+
+    askBtn.addEventListener("click", ask);
+    qEl.addEventListener("keydown", (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === "Enter") ask();
+    });
+  </script>
+</body>
+</html>

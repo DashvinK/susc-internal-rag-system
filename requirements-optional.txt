@@ -1,0 +1,8 @@
+# OPTIONAL local-only extras. Not required for the pipeline, API, eval, or
+# ablation study (those use NumPy for vector storage).
+#
+# ChromaDB gives src/retrieval/store_chroma.py a persistent local vector store
+# if you prefer it for experiments. On Windows it compiles chroma-hnswlib from
+# source and needs the Microsoft Visual C++ Build Tools:
+#   https://visualstudio.microsoft.com/visual-cpp-build-tools/
+chromadb==0.5.23

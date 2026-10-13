@@ -1,0 +1,44 @@
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Confidential corpus (NEVER commit) ---
+# Ignore the CONTENTS but keep the folder (via .gitkeep). Note: ignoring the
+# directory itself (data/private/) would make the .gitkeep un-re-includable.
+data/private/*
+!data/private/.gitkeep
+
+# --- Local-only artifacts ---
+local_index/*
+!local_index/.gitkeep
+src/eval/runs/*
+!src/eval/runs/.gitkeep
+.cache/
+.llm_cache/
+
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# --- Models downloaded by fastembed / sentence-transformers ---
+.fastembed_cache/
+.cache/huggingface/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Vercel ---
+.vercel/

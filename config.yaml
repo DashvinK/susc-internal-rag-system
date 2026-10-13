@@ -1,0 +1,56 @@
+# ---------------------------------------------------------------------------
+# Single source of truth for pipeline + retrieval + generation settings.
+#
+# Loaded by src/config.py. Environment variables override a subset of these
+# (see src/config.py) so you can tune the live Vercel function WITHOUT a
+# redeploy. Secrets (GROQ_API_KEY) NEVER live here -- only in .env / Vercel.
+# ---------------------------------------------------------------------------
+
+chunking:
+  # Measured in CHARACTERS (not tokens) so chunking has zero model dependency.
+  # ~2000 chars is roughly 500 tokens for English prose.
+  chunk_size: 2000
+  overlap: 200            # ~10% overlap keeps context across chunk boundaries
+
+embedding:
+  # Offline (index build) uses sentence-transformers; online (live query) uses
+  # fastembed. Both point at the SAME model so vectors share one space.
+  offline_model: "BAAI/bge-small-en-v1.5"
+  online_model: "BAAI/bge-small-en-v1.5"
+  # bge models are trained with an instruction prefix on the QUERY side only.
+  query_prefix: "Represent this sentence for searching relevant passages: "
+  normalize: true         # L2-normalize so dot product == cosine similarity
+  dim: 384                # bge-small / MiniLM output dimension
+
+retrieval:
+  mode: "hybrid"          # hybrid | dense | bm25  (prod default; overridable by env)
+  top_k: 5                # chunks passed to the LLM
+  candidate_k: 20         # candidates each retriever contributes before fusion
+  rrf_k: 60               # Reciprocal Rank Fusion constant (standard default)
+  # Refusal: if retrieval confidence is below this, skip the LLM and refuse.
+  # Tuned on the eval set in Week 5. cosine-based when dense is available.
+  refusal_threshold: 0.30
+  # Looser absolute floor used only when running BM25-only (no dense signal).
+  bm25_refusal_threshold: 2.0
+
+reranker:
+  # Offline ablation only -- never deployed.
+  model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+
+llm:
+  provider: "groq"                             # groq | ollama (env: LLM_PROVIDER)
+  model: "llama-3.3-70b-versatile"             # env: LLM_MODEL
+  base_url: "https://api.groq.com/openai/v1"   # env: LLM_BASE_URL
+  temperature: 0.0        # deterministic answers and judging
+  max_tokens: 1024
+  request_timeout_s: 30
+  max_retries: 4          # exponential backoff on HTTP 429 / transient errors
+
+paths:
+  public_data: "data/public"
+  private_data: "data/private"
+  index_dir: "index"
+  local_index_dir: "local_index"
+
+limits:
+  max_question_chars: 1000

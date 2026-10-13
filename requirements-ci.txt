@@ -1,0 +1,12 @@
+# Slim dependency set for CI: lint + unit tests only.
+# Deliberately excludes torch / sentence-transformers / chromadb / fastembed so
+# CI stays fast. Tests run in BM25 mode and mock the LLM, so none are needed.
+numpy==2.1.3
+rank-bm25==0.2.2
+PyYAML==6.0.2
+fastapi==0.115.6
+pydantic==2.10.4
+openai==1.57.4
+httpx==0.28.1
+pytest==8.3.4
+ruff==0.8.4

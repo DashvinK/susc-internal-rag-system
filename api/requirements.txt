@@ -1,0 +1,14 @@
+# ===========================================================================
+# ONLINE dependencies -- the ONLY requirements that affect the Vercel deploy.
+# Keep this SLIM. No torch, no sentence-transformers, no chromadb.
+# Re-run the Week-1 size check after adding anything here (must stay < 250 MB
+# unzipped). See scripts/size_check.md.
+# ===========================================================================
+
+fastapi==0.115.6
+pydantic==2.10.4
+openai==1.57.4
+numpy==2.1.3
+rank-bm25==0.2.2
+fastembed==0.5.1        # ONNX runtime, no PyTorch -- the whole point
+PyYAML==6.0.2
