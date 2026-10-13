@@ -1,172 +1,522 @@
 [
   {
-    "id": "520cd6c11d1c08c3",
-    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.\n> Replace with the real SUSC constitution before publishing.",
-    "source": "constitution.md",
-    "section": "SUSC Constitution (SAMPLE)",
+    "id": "688f3861baab5357",
+    "text": "Training Session 1",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 1",
     "chunk_index": 0,
     "metadata": {
-      "char_len": 136
+      "char_len": 18
     }
   },
   {
-    "id": "c634d776ce35751e",
-    "text": "The organisation shall be known as the Sunway University Student Council,\nabbreviated SUSC. Its purpose is to represent the student body, organise\nextracurricular events, and support member welfare across the academic year.",
-    "source": "constitution.md",
-    "section": "Article 1 — Name and Purpose",
+    "id": "c249c3e00afb1e34",
+    "text": "B E H I N D T H E S C E N E S\nO F A N E V E N T\nPre-EventPlanningStage\nExecutionStage\nPost EventStage\nProposal\nTimeline Task Tracker (TTT)\nBudget Forecast\nVenue/Equipment Booking Tracker\nPromotion Sponsorship\nPurchases\nAction Plan\nActual BudgetBreakdown\nPost-MortermReview\nReimbursement\nApproval\nDirectorEXCOAdvisor\nEvent Day",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 2",
     "chunk_index": 1,
     "metadata": {
-      "char_len": 223
+      "char_len": 325
     }
   },
   {
-    "id": "8e2638a5f1d685b3",
-    "text": "Membership is open to all enrolled students. Ordinary members may attend events\nand vote in the annual general meeting. Committee members are appointed through\nthe Executive Member Recruitment process and hold additional responsibilities.",
-    "source": "constitution.md",
-    "section": "Article 2 — Membership",
+    "id": "ebec32a8c49051db",
+    "text": "Open up the GEO Training Slides on your respective devices\nNOTES taking are more than encouraged\nJot down any questions you have (don’t rely on memory)\nTERM GOOGLE DRIVE\nT h e m a i n s t o r a g e o f y o u r e v e n t p l a n n i n g m a t e r i a l sT h e m a i n s t o r a g e o f y o u r e v e n t p l a n n i n g m a t e r i a l s T h e m a i n s t o r a g e o f y o u r e v e n t p l a n n i n g m a t e r i a l s\nServes as a track record and a reliable reference to ensure everyone ison the same page.\nHelps prevent files from being misplaced or lost\nA R E Y O U R E A D Y ?",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 3",
     "chunk_index": 2,
     "metadata": {
-      "char_len": 238
+      "char_len": 582
     }
   },
   {
-    "id": "7a54afa779047719",
-    "text": "The committee is led by the President, who serves a term of one academic year\nand may be re-elected once. The President is supported by the Vice President,\nthe Director of Human Resources, the Director of Extracurricular, and the\nTreasurer.\n\nThe Director of Extracurricular oversees all club activities and is responsible\nfor event logistics, including venue booking and equipment. The Treasurer is\nresponsible for the budget and for approving reimbursement claims.",
-    "source": "constitution.md",
-    "section": "Article 3 — Committee Structure and Roles",
+    "id": "e5118070e031a3c9",
+    "text": "M E E T I N G M I N U T E S\n( Transfering your real life meeting into black and white document form )",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 4",
     "chunk_index": 3,
+    "metadata": {
+      "char_len": 101
+    }
+  },
+  {
+    "id": "1ab17c8f58156801",
+    "text": "1. COVER PAGE\nState attendees of the meeting\nOutline the agenda for the meeting and\nbriefly explain what is the meeting\noutcome you are anticipating or what will\nbe done during the meeting e.g.\ndelegation, discussion\n2. MEETING REPORT\nWrite down the main points in a structured\nand readable manner\nDoes not expect word-to-word but needs\nto be readable and understandable\n3. ACTION ITEMS\nBefore concluding the meeting, revisit the\nmeeting report and outline the action item\nthat needs to be acommplished by each\nindividuals\nHighly encourage to set a deadline for each\naction items if possible and applicable\n4. ACKNOWLEDGEMENT\nMinute-writer signature\nAnd director signature\nSend the meeting minutes link into the\ndepartmental / taskforce group\nM E E T I N G M I N U T E S",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 5",
+    "chunk_index": 4,
+    "metadata": {
+      "char_len": 770
+    }
+  },
+  {
+    "id": "ab2245c27a36b731",
+    "text": "EMAIL DRAFTS & SOP\nCC the email to your director’s, exco advisor’s and club\nadvisor’s email address (Mr Farhan)\nAlways remember to introduce yourself if you are\nreaching out to third party and state your purpose of the\nemail.\nDon’t send using your phone! (Sent with Outlook)\nSOP\nAll external emails are to be sent through sa.info email and\ncc to respective parties.\nDraft email and request email to be sent by the director\nIf you have any document that you wish attached in the\nemail, provide a link to your email draft document",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 6",
+    "chunk_index": 5,
+    "metadata": {
+      "char_len": 528
+    }
+  },
+  {
+    "id": "9e3ee6619051d220",
+    "text": "Pre-Event Planning Stage\nProposal\n1.Introduction\nProvide an overview/summary of your\ninitiatives - stating the the department\nthat organise it, aims/objective of the\ninitiative, overall run down of the initiative\n2.Objectives\nFor the Sunway Student Community and\nfor SUSC\n3.Involved Party\nState who are the organisers and the\nexternal party involved (e.g. Vendors,\nPerformers, Sponsors, VIP)\nWho is your target audience? How many\npax are you targeting?",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 7",
+    "chunk_index": 6,
+    "metadata": {
+      "char_len": 452
+    }
+  },
+  {
+    "id": "3a4b6fa6292b10e2",
+    "text": "Pre-Event Planning Stage\n4. Event/ Initiative Details\nDate(s), Time, Venue(s)\n5. Tentative Itinerary\nWhen are you starting to set up your\nevent venue\nWhat is the overall flow of the event until\nclean up\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 8",
+    "chunk_index": 7,
+    "metadata": {
+      "char_len": 211
+    }
+  },
+  {
+    "id": "0d21d5c53b33312d",
+    "text": "Pre-Event Planning Stage\n6. Initiative Rundown\nExplain what happens at each agenda\nthat you mentioned in the tentative\nitinerary\nA successful initiative rundown allows the\none to be able to visualise the flow of the\nevent in slightly more detailed than the\ntentative itinerary\n7. Overall timeline\nState the key dates for your event - event\ndate, main post date, registration date (if\napplicable), rehearsal date and so on\nIt is your responsibility to identify the\ncrucial dates in which the type of dates\nare subjected to the nature of your event\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 9",
+    "chunk_index": 8,
+    "metadata": {
+      "char_len": 555
+    }
+  },
+  {
+    "id": "0074cf8d2688741e",
+    "text": "Pre-Event Planning Stage\n8. Roles and Responsibilities\nIdentify the main tasks that need to be\ndone and delegate among those who are\non board of your event taskforce/ team\nWrite the down the names in the PIC\ncolumn and give a concise description of\ntheir responsibilities\n9. Floor Plan\nConstruct a floor plan using any\npresentation software\nDo not hand-draw your floor-plan\nThere may be a need for you to scout the\nvenue before constructing the floor plan\nAlways remember to include legends and\nkey below the floorplan\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 10",
+    "chunk_index": 9,
+    "metadata": {
+      "char_len": 527
+    }
+  },
+  {
+    "id": "247ca16322e8946c",
+    "text": "Pre-Event Planning Stage\n10. Risk Assessment\nWhat risks do you anticipate for your\nevent and what are the chances that this\ncould happen (e.g. high, moderate, low)\nFor each risk, state how would plan to\nresolve it when it turns out to arise\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 11",
+    "chunk_index": 10,
+    "metadata": {
+      "char_len": 249
+    }
+  },
+  {
+    "id": "965503c37ac26e0e",
+    "text": "Pre-Event Planning Stage\n11. Budget\nDo not fill up this section before approval\nfrom treasurer.\nYou will have to fill up a financial\nspreadsheet to show your budget\nforecast, obtain your approval and then\nlastly only copy and paste the budget\ninto the proposal.\nYou are not required to fill up the last two\nrow - contribution from SUSC and Student\nLife.\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 12",
+    "chunk_index": 11,
+    "metadata": {
+      "char_len": 362
+    }
+  },
+  {
+    "id": "41430dc25b87e827",
+    "text": "Pre-Event Planning Stage\nB u d g e t F o r e c a s t T a b\nAssist with Proposal Budget Forecast\nOutline all the anticipated expenses in the\nbudget forecast sheet of the financial\nspreadsheet.\nFill this spreadsheet up first and ask for\napproval from treasurer. You will need to\nsend both your proposal and budget\nforecast spreadsheet for approval.\nUpon approval, you can transfer the details\naccordingly into the proposal.\nF in a n c ia l S p r e a d s h e e t\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 13",
+    "chunk_index": 12,
+    "metadata": {
+      "char_len": 468
+    }
+  },
+  {
+    "id": "7f4ff90f68d3a2ad",
+    "text": "Pre-Event Planning Stage\n11. Signatures and Acknowledgement\nMake sure the signatures are filled up\n(Project Lead, Co-lead and Director),\nbefore sending your proposal for the\nPresident or Vice President for approval.\nWhile waiting for Treasury’s approval of your\nfinancial spreadsheet, ensure that 90% of your\nproposal is completed (only the budget forecast\nsection remains pending approval).\nNOTE:\nProceed with developing a detailed Timeline\nTask Tracker (TTT)\nProposal",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 14",
+    "chunk_index": 13,
+    "metadata": {
+      "char_len": 469
+    }
+  },
+  {
+    "id": "def9ddaed5806a09",
+    "text": "Pre-Event Planning Stage\nFill up the neccesary details of your event\nIdentify the criterion of task delegation\nState who is the PIC for that task\nState the due dates for each task to be\naccomplished\nCheck the checkbox in the status column if it\nis done\nIf there is a link to the related task, PIC to\nattach the link there\nIt will be reviewed together with proposal\nand it is subjected to changed from time to\ntime\nTimeline Task Tracker",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 15",
+    "chunk_index": 14,
+    "metadata": {
+      "char_len": 435
+    }
+  },
+  {
+    "id": "845b6260bec25504",
+    "text": "P r e - E v e n t P l a n n i n g S t a g e\nWhat’s next ?\nApproval Stage\nProject Lead to submit the proposal to your\ndirector/EXCO Advisory for review and\nfeedback\nDirector to obtain approval for the proposal\nfrom the president/vice president\nDirector to send the approved proposal to\nthe club advisor via Imail, copying (cc) to ALL\nEXCO members\nYou’re almostdone with yourplanning stage !\nNote:\nPL and CPL should always stay alert to any comments\nadded by the Director or EXCO and address them\naccordingly.",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 16",
+    "chunk_index": 15,
+    "metadata": {
+      "char_len": 507
+    }
+  },
+  {
+    "id": "973fb0302d233ef5",
+    "text": "Execution Stage\nBooking Tracker\nTo be filled up and/or finalised upon your\nproposal is being approved by our club advisor.\nTo be filled up by project lead and checked by\nthe director.\nThe bookings will be sent to Mr Farhan by the\nEXCO Advisor.\nYou are highly encouraged to include your\nsecond choice.\nThe latest event will always be at the top of the\ndocument.\nBookings that are made less than 10 working\ndays will no be entertained.\nVenue/Equipment Booking Tracker",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 17",
+    "chunk_index": 16,
     "metadata": {
       "char_len": 465
     }
   },
   {
-    "id": "42acb919a3e4a263",
-    "text": "A general meeting requires a quorum of fifty percent of committee members plus\none. Decisions are made by simple majority of those present, except amendments\nto this constitution.",
-    "source": "constitution.md",
-    "section": "Article 4 — Meetings and Quorum",
-    "chunk_index": 4,
+    "id": "faabf83eca2b51be",
+    "text": "Execution Stage\nPrintingTrackers\nAny printing that needs to be done have to\nbe requested at least 2 to 3 academic days.\nInform secretarial when the request is being\nmade on the tracker.\nAll printing is to be only be done by the\nSecretarial department\nPlease inform the secretary once the printing\ntracker is filled in\nBe as detailed as possible when describing\nyour printing materials",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 18",
+    "chunk_index": 17,
     "metadata": {
-      "char_len": 179
+      "char_len": 384
     }
   },
   {
-    "id": "02a083a542ecc381",
-    "text": "This constitution may be amended only by a two-thirds majority vote of the full\ncommittee at a meeting where quorum is met. Proposed amendments must be\ncirculated to all committee members at least seven days before the vote.",
-    "source": "constitution.md",
-    "section": "Article 5 — Amendments",
-    "chunk_index": 5,
+    "id": "bba782b4042ffca0",
+    "text": "Execution Stage\nMediaRequest Form\nSubmit your MRF at least 3 weeks in advance.\nRespective departments must prepare the MRF and\nobtain director approval before submission.\nOnce approved, the director should email it to the\nPR Director (Thanesh) at\nsa.branding@imail.sunway.edu.my.\nThe PR Director will review and approve the MRF,\nthen inform the requesting department via iMail.\nAfter approval, the PR Director will assign the task\nto the respective PR Executive to begin work and\nfinalize it by the proposed deadline.\nLast minute MRF is strictly not allowed!",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 19",
+    "chunk_index": 18,
     "metadata": {
-      "char_len": 224
+      "char_len": 558
     }
   },
   {
-    "id": "caa2fe1cacb0c6c2",
-    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
-    "source": "emr_process.md",
-    "section": "Executive Member Recruitment (EMR) (SAMPLE)",
+    "id": "c3d763972bb6b993",
+    "text": "Execution Stage\nSponsorRequest Form\nSubmit the SRF at least 1 month before your event\ndate (earlier is highly encouraged).\nFill in the form as detailed as possible to help us\nbetter understand your sponsorship needs.\nThe SRF template can be found in the External\nRelations > Templates folder.\nOnce completed, get the form approved by your\nDepartment’s Director.\nAttach the SRF into our ER SRF Tracker and add a\nshortcut of your SRF document into the main SRF\nFolder.\nNotify the ER Director (Utirah) after submission.",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 20",
+    "chunk_index": 19,
+    "metadata": {
+      "char_len": 516
+    }
+  },
+  {
+    "id": "0410cb55e12f9171",
+    "text": "Purpose: To record every financial movement related\nto the event.\nWhat to fill in:\nDate – When the transaction happened\nParticular – Description of the item or payment\n(e.g. \"Backdrop printing\", \"Booth rental\")\nPayer – Name of the person who made the\npayment\nPlus (RM) – Any funds received (e.g. Monetary,\nticket sales)\nMinus (RM) – Any funds spent (e.g. purchases)\nThe sheet will auto-calculate total and balance\nReminder\nKeep it updated throughout the event so post-event\nreporting is easier.\nF in a n c ia l S p r e a d s h e e t\nTransaction Log\nExecution Stage",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 21",
+    "chunk_index": 20,
+    "metadata": {
+      "char_len": 564
+    }
+  },
+  {
+    "id": "354f8d5fc853def8",
+    "text": "Execution Stage\nDuty Sheet",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 22",
+    "chunk_index": 21,
+    "metadata": {
+      "char_len": 26
+    }
+  },
+  {
+    "id": "c408d0231f8c9e80",
+    "text": "Execution Stage\nHaving a physical booth and introducing your\nevent to students in a warm and friendly\nmanner is always more effective in capturing\ntheir attention and providing an opportunity\nfor real-life inquiries.\nYou’ll need manpower to assist you in\ncarrying out promotion, ask for assistance\nfrom other departments by sending the\nPromotional Booth Duty Sheet in SUSC W/A\nFam Group.\nConduct a briefing at least 2-3 days before\nthe duty day to explain what your event is\nabout and what do you need your booth duty\nPIC to do.\nB o o t h / F lo o r D u t y\nYou’ll need extra manpower to assist you\nwhen there’s additional manpower needed\nother than those from your department to\nhelp out during the event day.\nConduct a briefing at least 2-3 days before\nthe event day to explain what your event is\nabout and what do you need your event day\ntask force to do.\nE v e n t D u t y\nSending the Event Duty Sheet in SUSC W/A\nFam Group and allowing executives to\nchoose their preferably delegation is\nencouragable.\nDuty Sheet",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 23",
+    "chunk_index": 22,
+    "metadata": {
+      "char_len": 1017
+    }
+  },
+  {
+    "id": "66aa2adddc190c1b",
+    "text": "Execution Stage\nAction Plan\nThe action plan is the final master document that facilitate\ncommunication during the event day(s). It covers what\nneeds to be done pre-, during and post-event by the\nmanpower you have recruited. It should describe and\nexplain who do what at where and when.\nTo be drafted 1-2 weeks before the event.\nIt should be as detail as possible\nWhat needs to be done in specific in what way and\nwhen e.g. checking stocks of goodie bags and\nmerchandise and F&B\nThe timing for each task needs to be as specific as\npossible\nEven though there will be delays during the event,\nhaving a pre-determined timing for each task to be\ndone also gives you the reference on what agenda\ncan be trimmed or can be extended in a reasonably\nmanner\nIt also serves as baseline reference to estimate how\nlikely your event is going to be delayed or on the right\ntrack",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 24",
+    "chunk_index": 23,
+    "metadata": {
+      "char_len": 862
+    }
+  },
+  {
+    "id": "7103d923ea2bf49c",
+    "text": "Execution Stage\nInclude any links to any reference document that needs\nto be refer to during the task and agenda\nPICs\nThis should as specific as possible because in case of\nreplacement, the replacement will know what duties\nand tasks needs to be done\nWhat is the standard?\nIt is comprehensive for an outsider to know what to do\nwhen reading the action plan.\nFinal Briefing\nHost a briefing to ensure all task force members\nunderstand their roles and have a clear picture of the\nD-Day itinerary\nAction Plan",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 25",
+    "chunk_index": 24,
+    "metadata": {
+      "char_len": 504
+    }
+  },
+  {
+    "id": "1bf807804441e4b1",
+    "text": "Execution Stage\nIs that all ?\nYou’re done withyour executionstage !",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 26",
+    "chunk_index": 25,
+    "metadata": {
+      "char_len": 67
+    }
+  },
+  {
+    "id": "221296f71881cf0b",
+    "text": "Post-Event Stage\nPost MortemReport\nNeeds to be filled up during the post-event\nreview meeting.\nEvaluation of event objective\nReview your event objective and state\nwhether it is achieved and explain why.\nEvaluate what went well during the event\nWhat happened during the event is that\nworth-noting\nWhat were highlights of the event that was\nunexpected/ expected?",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 27",
+    "chunk_index": 26,
+    "metadata": {
+      "char_len": 360
+    }
+  },
+  {
+    "id": "84b0b2910a1eea85",
+    "text": "What did not went well?\nDescribe and explain the unforeseen setback that\noccurred during the event or even during the\npreparation phase.\nDescribe what were contingency measures taken\nto resolve the issue\nRIP Section\nRecommendation - what can be recommended on\ntop of the original event that was done?\nImprovements - what should have been done better\nand/or can be done better?\nPrecautions - what are the aspects that requires\nmore thoughts or foresee beforehand?\nPhotos\nInclude photos of the event that showcase the\nhighlight of events.\nPost-Event Stage\nPost MortemReport",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 28",
+    "chunk_index": 27,
+    "metadata": {
+      "char_len": 571
+    }
+  },
+  {
+    "id": "e8246e0761016c3d",
+    "text": "Actual BudgetBreakdown\nPost-Event Stage\nF in a n c ia l S p r e a d s h e e t\nRecord all the actual income and expenses after the\nevent has taken place.\nThis sheet should reflect the real amounts spent and\nreceived.\nEnsure all figures are consistent with the\nReimbursement Forms and Transaction Log.\nThe completed sheet will be used to compare against\nthe Budget Forecast to identify any variances between\nestimated and actual spending.",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 29",
+    "chunk_index": 28,
+    "metadata": {
+      "char_len": 436
+    }
+  },
+  {
+    "id": "f62e23558ef2eedb",
+    "text": "ReimbursementForm\nIt should be found in a reimbursement folder in your\nevent folder.\nWhoever spend beforehand will have to each create\na reimbursement form.\nAttach images of the receipts in the form.\nDigital version - Screenshot and insert prove of\nbanking statement\nPhysical Receipt - Snap and insert prove of\npayment\nAfter everyone has completed their reimbursement\nform, project lead/ director send an email to\ntreasury attaching the links to\nReimbursement Form Folder\nActual Budget Expenses\nPost-Event Stage",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 30",
+    "chunk_index": 29,
+    "metadata": {
+      "char_len": 511
+    }
+  },
+  {
+    "id": "5669c22a20067008",
+    "text": "Chain of Communication\nGENERAL\nEXECUTIVES DIRECTORS EXCO\nADVISORS\nCLUB\nADVISORS\n(To ensure smooth coordination and accurate information flow in the council)\nAlways communicate through your immediate lead first (e.g. Director, Project Lead) .\nUpdate the person you reported to after an issue is resolved.\nKeep internal matters within your department.\nAvoid discussing sensitive issues in public or with external parties.\nAddress problems privately and through the right channels.\nSOP",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 31",
+    "chunk_index": 30,
+    "metadata": {
+      "char_len": 482
+    }
+  },
+  {
+    "id": "e32a2c3e6f3c1430",
+    "text": "Chain of Communication\nALL SUSC Members\n(To ensure smooth coordination and accurate information flow in the council)\nSUSC\nOffice\nStaff Room Brainstorming Room\nCore Team Under SR Deptmaintanance\nD e p t s m a k e s u r e t o c l e a n a l l y o u r\ne q u i p m e n t w i t h i n 1 w e e k a f t e r y o u r\ne v e n t .",
+    "source": "SUSC 101 - 20262027.pdf",
+    "section": "page 32",
+    "chunk_index": 31,
+    "metadata": {
+      "char_len": 317
+    }
+  },
+  {
+    "id": "459a1c4a1485fa89",
+    "text": "SUSC 2026/2027 Executives Job Scope\n* Note: Hey there! Please be noted that the “General Requirements” are not deciding-factors per se.\nTherefore,\n\ndo\n\napply\n\nto\n\nus\n\nif\n\nyou\n\nfeel\n\nthat\n\nyou\n\nare\n\na\n\ngood-fit\n\nas\n\nan\n\nExecutive\n\nfor\n\nthese\n\nDepartments.\n\nDepartment Executive Job Description General Requirements\nSecretarial\n1. Handle day-to-day administrative work of SUSC. 2. Prepare meeting minutes and deploy various project management tools. 3. Plan and organise internal bonding / farewell party / general meetings.\n1. Proficient in English, both written and spoken. 2. Able to carry out tasks professionally and neatly. 3. Able to be physically present on-campus.\nTreasury\n1. Assist in the process of approving claims. 2. Maintain organized records of receipts, invoices, and expenses. 3. Seek subsidy from Student LIFE for SUSC expenses. 4. Represent the department in the event the director is not present. 5. Work with other departments to align budgets with their plans.\n1. Proficient in English, both written and spoken. 2. Able to perform tasks given responsibly. 3. Able to maintain a professional attitude when dealing with finances.\nAcademic Affairs\n1. Represent respective schools / faculty under the student representative system, to gather academic feedback, assisting the department in handling or resolving any academic issues, while maintaining discretion. 2. Assist department in compiling evidence of academic issues faced by respective schools / faculty to ensure swift\n1. Willing to speak publicly if opportunity arises. 2. Willing to prioritise the interests of students first and foremost. 3. Reliable and responsible, able to complete assigned tasks in a timely fashion, with attention to detail and neat presentation.",
+    "source": "SUSC 2026_2027 Executives Job Scope.pdf",
+    "section": "page 1",
     "chunk_index": 0,
     "metadata": {
-      "char_len": 75
+      "char_len": 1748
     }
   },
   {
-    "id": "719d241692335423",
-    "text": "EMR stands for Executive Member Recruitment. It is the annual process by which\nSUSC selects new committee members. EMR runs at the start of the first semester\nand is open to all ordinary members in good standing.",
-    "source": "emr_process.md",
-    "section": "Overview",
+    "id": "68d4970c5b1e72f6",
+    "text": "Department Executive Job Description General Requirements\nresolution. 3. Represent students in management meetings to communicate pressing academic issues, where necessary. 4. Proactively participate in planning and execution of every AA department’s initiative.\n4. Able to communicate issues, feedback & disagreement within the team in a constructive and professional manner. 5. Have strong time management skills.\nExternal Relations\n1. Liaise with external parties to negotiate potential partnerships with SUSC. 2. Co-Host events alongside external parties. 3. Collaborate with other departments by sourcing and securing sponsors for their events. 4. Handle and assist in the preparation of documentation, presentations, and reports related to external relations. 5. Coordinate with sponsors to ensure fulfillment of commitments and proper acknowledgment in events.\n1. Preferably well networked and is/has been involved in extracurricular activities/external organisations. 2. Have good communication skills and are confident when dealing with external parties. 3. Have good event management skills. 4. Shows creativity and resourcefulness in proposing sponsorship ideas or partnership opportunities.\nExtracurricular\n1. Assist the Clubs & Societies with any issues that they have. 2. Assist and collaborate with Student LIFE in planning and organising any C&S related activities.\n1. Able to communicate well with external parties. 2. Able and willing to make new connections. 3. Able to be on-campus physically when campus reopens. 4. Proactive, enthusiastic, and committed to assigned responsibilities. 5. Brings a positive and enjoyable spirit to the team",
+    "source": "SUSC 2026_2027 Executives Job Scope.pdf",
+    "section": "page 2",
     "chunk_index": 1,
     "metadata": {
-      "char_len": 212
+      "char_len": 1659
     }
   },
   {
-    "id": "bd8d0ef69dcae4c1",
-    "text": "After applications close, candidates are shortlisted before interviews. The\nshortlisting process is chaired by the Director of Human Resources, who\nconvenes a panel of at least three committee members. Shortlisting is based on\nthe written application, prior involvement in SUSC events, and availability for\nthe full term.\n\nShortlisted candidates are notified by email within five working days of the\npanel's decision.",
-    "source": "emr_process.md",
-    "section": "Shortlisting",
+    "id": "7f91723bd0900c9b",
+    "text": "Department Executive Job Description General Requirements\nenvironment. 6. Good at paperwork.\nPublic Relations\n1. Create and update events and/or announcements on SUSC’s social media platforms. 2. Produce promotional materials for SUSC-related initiatives. 3. Manage Instagram initiatives and maintain the engagement of our social media accounts. 4. Share and promote promotional requests from Clubs & Societies and external parties. 5. Respond to all enquiries on SUSC’s social media platforms.\n1. Able to write in proficient English and come up with creative captions. 2. Proficient in Canva, with the ability to create visually appealing and original designs. 3. Awareness of current trends, with the initiative to incorporate them into creative postings and design ideas. 4. Knowledge of any design or media editing tools would be an added advantage. 5. Some design experience is valued (a portfolio of past work will be required + a design prompt on Canva). 6. Be able to reply to urgent enquiries from students in any of SUSC’s social media platforms.\nStudent Relations\n1. Represent the department by attending SUSC internal meetings, external meetings, or student feedback sessions in the absence of, or alongside the director. 2. Assist in the planning and execution of student welfare initiatives, such as townhalls, feedback channels, and awareness programs. 3. Support the department in collecting, reviewing, and summarizing student feedback\n1. Strong communication skills, both written and spoken, with confidence in engaging students and representing the department when required. 2. Friendly, approachable, and empathetic, able to build trust while remaining professional and composed in settings such as student interactions, council meetings, and discussions with university management.",
+    "source": "SUSC 2026_2027 Executives Job Scope.pdf",
+    "section": "page 3",
     "chunk_index": 2,
     "metadata": {
-      "char_len": 417
+      "char_len": 1802
     }
   },
   {
-    "id": "4e7d702e35deccd7",
-    "text": "If a committee position is vacated mid-semester, an emergency EMR may be\nconvened. Emergency recruitment follows the same shortlisting rules but may be\ncompleted within two weeks. The President must approve any emergency EMR before\nit begins.",
-    "source": "emr_process.md",
-    "section": "Emergency Recruitment",
+    "id": "c5a08bbf24c05da9",
+    "text": "Department Executive Job Description General Requirements\nto present to the council or university management; support the department in resolving student welfare issues where applicable and able. 4. Assist with the coordination of student-centric collaborations with other SUSC departments or external partners when relevant.\n3. Reliable and consistent, with a systematic approach and eye for detail in handling tasks and student feedback. 4. Collaborative team player who contributes actively to discussions, and is able to represent diverse student perspectives responsibly.",
+    "source": "SUSC 2026_2027 Executives Job Scope.pdf",
+    "section": "page 4",
     "chunk_index": 3,
     "metadata": {
-      "char_len": 242
+      "char_len": 576
     }
   },
   {
-    "id": "a958d80da0c5420c",
-    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
-    "source": "event_sop.md",
-    "section": "Event Standard Operating Procedure (SAMPLE)",
+    "id": "3bfc30ed82a2b68c",
+    "text": "[Initiative Name] Action Plan\n\nOverall Delegations\n\nTime | Agenda | Description of Action Items | PIC | Remarks",
+    "source": "[Template] Action Plan 26_27.docx",
+    "section": "body",
     "chunk_index": 0,
     "metadata": {
-      "char_len": 75
+      "char_len": 111
     }
   },
   {
-    "id": "eb4779ddbbc07a2a",
-    "text": "Every SUSC event begins with a written proposal. The proposal must be submitted\nto the Director of Extracurricular at least fourteen days before the event date.\nIt must include the objective, budget estimate, venue, and expected attendance.\nProposals submitted late may be rejected if resources cannot be arranged in time.",
-    "source": "event_sop.md",
-    "section": "Event Proposals",
+    "id": "4a507b4c2fdbd094",
+    "text": "Email Draft Template\n\nTo | Insert the recipient email\nCc | Insert email of director, exco advisor and club advisor (Mr Ken)\nBcc | If applicable\nSubject\nDear {Recipient Name},\n\nGreetings from Sunway University Student Council (SUSC)!\n\n{Introduction and purpose of the email}\n\n{About your Event}\n\n{Key event details}\n\n{Attached proposal or documents for reference in PDF}\n\n{Attached link for reference}\n\nThank you for your time and consideration. We look forward to hearing from you.\n\nHave a great day ahead!\n\nSAMPLE Email Draft\n\nTo | popularmalaysia@popularworld.com\nCc | sa.branding@imail.sunway.edu.my sa.studentwelfare@imail.sunway.edu.my sa.treasurer@imail.sunway.edu.my\njoshuay@imail.sunway.edu.my\nBcc | If applicable\nSubject | Sponsorship Opportunity - Sunway University Student Council Student Welfare Month: Giveback Project.\n\nPopular Bookstore Sponsorship Team,\n\nGreetings from Sunway University Student Council (SUSC)!\n\nI hope this email finds you well. I am Xiao Xuan, Public Relations Executive of the Sunway University Student Council (SUSC). We are seeking a collaborative partnership with Popular Bookstore for our Sunway University Student Council Student Welfare Month.\n\nWe are excited to inform you about our inaugural Sunway University Student Council Student Welfare Month, a dedicated initiative focused on fostering a positive and supportive campus climate.\n\nObjectives:\nAchieve the overarching goal of fostering inclusivity.\nProviding a platform for all students within the Sunway community to come together and form new connections.\nEncourage active student participation in events that are beneficial to them.\nServe as a platform for students to access resources that contribute to their overall well-being.\n\nEvent Details:\nDate : 8th May 2025\nHours : 10:00 a.m. - 1:00 p.m.\nVenue : Link Bridge, Sunway College and Avenue of Achievement, Sunway University",
+    "source": "[Template] Email Draft 26_27.docx",
+    "section": "body",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 1879
+    }
+  },
+  {
+    "id": "fc3debcb6ec2ee7c",
+    "text": "sources that contribute to their overall well-being.\n\nEvent Details:\nDate : 8th May 2025\nHours : 10:00 a.m. - 1:00 p.m.\nVenue : Link Bridge, Sunway College and Avenue of Achievement, Sunway University We invite your company to support and sponsor this event, as your generous contribution is crucial for the successful execution of the carnival. Your sponsorship will significantly contribute to the success of the event, benefiting participants and providing excellent visibility for your brand within the SUSC community.\n\nIf interested, kindly reply by 3 April 2025, and we will promptly discuss sponsorship details.\n\nThank you for considering this opportunity. We look forward to the possibility of collaborating with Popular Bookstore.\n\nWarmest regards,\nLee Xiao Xuan\nPublic Relations Executive 2025/2026\nEMAIL sa.info@imail.sunway.edu.my",
+    "source": "[Template] Email Draft 26_27.docx",
+    "section": "body",
     "chunk_index": 1,
     "metadata": {
-      "char_len": 322
+      "char_len": 842
     }
   },
   {
-    "id": "df5b7c52f11147f9",
-    "text": "A minimum of three committee members must be present to run an event booth at\nany time during opening hours. Each booth must display the SUSC banner and a\nprinted copy of the event schedule. Cash handling at booths is the\nresponsibility of the Treasurer or a delegate approved in writing by the\nTreasurer.",
-    "source": "event_sop.md",
-    "section": "Booth Operations",
+    "id": "cd8b7f46c2434130",
+    "text": "[General Meeting #]\nDATE\n{dd/mm/yyyy} | TIME\n{Time to time} | VENUE\n{Venue or platform}",
+    "source": "[Template] General Meeting Minutes 26_27.docx",
+    "section": "Meeting Minutes",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 87
+    }
+  },
+  {
+    "id": "ef072a0d01a479c2",
+    "text": "Name | Role\n(EXCOs)\n(Directors)\n(Execs) SEC-TRE-AA-ER-EC-PR-SR",
+    "source": "[Template] General Meeting Minutes 26_27.docx",
+    "section": "Attendees",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 62
+    }
+  },
+  {
+    "id": "fa6e8685a04988fa",
+    "text": "Agenda 1\nBrief description of the expected meeting outcomes\nAgenda 2\nBrief description of the expected meeting outcomes\nAgenda 3\nBrief description of the expected meeting outcomes\nConclusion\nSummarise any action items and conclude the meeting\n\nMeeting Report\n\nAgenda | Remarks\n1. | {Agenda 1}\n{Type here}\n{Type here}\n{Type here}\n{Type here}\n{Type here}\n2. | {Agenda 2}\n{Type here}\n{Type here}\n{Type Here}\n{Type here}\n{Type here}\n3. | {Agenda 3}\n{Type here}\n{Type here}\n{Type here}\n{Type here}\n3. | {Agenda 3}\n{Type here}\n{Type here}\n{Type here}\n{Type here}\n\nACTION ITEMS\nNo. | Items | PIC\n1.\n2.\n4.\n5.\n6.\n7.\n8.\n9.",
+    "source": "[Template] General Meeting Minutes 26_27.docx",
+    "section": "Agenda",
     "chunk_index": 2,
     "metadata": {
-      "char_len": 305
+      "char_len": 612
     }
   },
   {
-    "id": "cecd4d0182118438",
-    "text": "Reimbursement claims for event expenses must be submitted within thirty days of\nthe event, with original receipts attached. Claims without receipts will not be\nprocessed. The Treasurer reviews all claims and approves payment within fourteen\nworking days of a valid submission.",
-    "source": "event_sop.md",
-    "section": "Reimbursement and Claims",
+    "id": "3382cd4e55b17af2",
+    "text": "I, the undersigned hereby acknowledge that all information provided in this meeting report is correct and true at the point of time.\n\nPrepared by, | Approved by, | Endorsed by,\n[Name] | [EXCO Advisor]\n[Departmental] ]Executive | [Department] ]Director | [Position]\nSunway University\nStudent Council | Student Development Executive\nStudent Services Department",
+    "source": "[Template] General Meeting Minutes 26_27.docx",
+    "section": "Acknowledgements",
     "chunk_index": 3,
     "metadata": {
-      "char_len": 276
+      "char_len": 358
     }
   },
   {
-    "id": "b389838f901f33ed",
-    "text": "> SAMPLE placeholder document. Fictional content for pipeline testing only.",
-    "source": "orientation.md",
-    "section": "Orientation and Event Logistics (SAMPLE)",
+    "id": "98c34eed31757c68",
+    "text": "Sunway University Student Council\nMedia Request Form\n\nEvent Name | :\nDepartment | :\nLink to Proposal | :\nName of PIC | :\nSubmission Date | :\n\nMedia Request Form Guidelines\nSubmit the MRF at least 3 weeks in advance from the proposed posting date.\nFill up all the required information for PR review.\nPlease get the respective Director’s approval before submitting to PR\nUpon completion, the MRF PIC must email the MRF link to sa.branding@imail.sunway.edu.my and inform the PR director via WhatsApp.\n\n[Event/Initiative Name]\nMedia Type | Instagram Post (3:4 Vertical)\nPoster (A4)\nInstagram Story (9:16)\nSignage Poster (A3)\nInstagram Reel (9:16)\nTiktok (9:16)\niMail Blast\nOther [please specify]\n\nAesthetics\nMoodboard/Reference | [Insert Moodboard link for event if any]\nColour Palette (Fill in the box with the 4 colours of your preference)\n\nRequested Item 1 - [Post Name (Media Type)]\nDraft | [Canva Link/ Video Reference]\nCaption | [Insert Caption]\nAdditional Links | [Insert links such as Google Forms, Google Drive photos/videos, etc.]\nDetails\nPage / Clip No. | Title | Description\n[Page 1] | [Welfare Wave] | [Date: 17/07/2007]\n[Time: 8:00AM - 10:00AM]\n[Venue: Rooftop Terrace]\n[Page 2] | [What is Welfare Wave about?] | [Welfare wave is an event organised by…]\nNote: Duplicate this table for each requested item if multiple items are needed.\n\nMarketing Timeline\nOctober 2026\nSunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday\n[Main Post] | 2 | 3\n4 | 5 | 6\n[Countdown Story] | 7 | 8 | 9 | 10\n11 | 12 | 13 | 14 | 15\n[Reel] | 16 | 17\n18 | 19 | 20 | 21 | 22 | 23 | 24\n25 | 26 | 27 | 28 | 29 | 30 | 31",
+    "source": "[Template] Media Request Form (MRF) 26_27.docx",
+    "section": "body",
     "chunk_index": 0,
     "metadata": {
-      "char_len": 75
+      "char_len": 1617
     }
   },
   {
-    "id": "bafb1984236bd143",
-    "text": "SUSC orientation is held during the first week of each semester. It introduces\nnew students to the council, its events, and the membership sign-up process.\nOrientation sessions are run by the Director of Extracurricular together with\nvolunteers recruited through EMR.",
-    "source": "orientation.md",
-    "section": "Orientation Schedule",
+    "id": "c7e7521d9112c93f",
+    "text": "Legend\nPost\nStory\nVideo\n\nAcknowledgement\nI, the undersigned hereby acknowledge that all information provided in this event proposal is correct and true at the point of time.\n\nPrepared By: | Checked and Approved by:\n{Signature}\n{Name}\n{Position} | {Department} Director\n{Department} | {Department)",
+    "source": "[Template] Media Request Form (MRF) 26_27.docx",
+    "section": "body",
     "chunk_index": 1,
     "metadata": {
-      "char_len": 267
+      "char_len": 296
     }
   },
   {
-    "id": "62a28ba39455eb8d",
-    "text": "Venue bookings for all SUSC events are arranged by the Director of\nExtracurricular through the university's facilities office. Equipment such as\nsound systems, projectors, and tables must be reserved at least five working\ndays in advance. Any equipment damaged during an event must be reported to the\nDirector of Extracurricular within twenty-four hours.",
-    "source": "orientation.md",
-    "section": "Logistics and Equipment",
+    "id": "f10b222eaffe7edc",
+    "text": "Sunway University Student Council\nInitiative Post-Mortem Report\n\nEvent Name :\nEvent Date :\nEvent Time :\nEvent Venue :\n\nTargeted Pax | Actual Pax\n\nIf your event has a feedback form, analyse them first or during the meeting and include whatever resolution or issues that are raised by the participants.\n\nEvent Objective\n\nGeneral Objectives - for the Sunway Student Community\n[Objective 1] - not/partially/ achieved\nWhy?\n[Objective 2] - not/partially/ achieved\nWhy?\n[Objective 3] - not/partially/ achieved\nWhy?\nFor Sunway University Student Council (SUSC)\n[Objective 1] - not/partially/ achieved\nWhy?\n[Objective 2] - not/partially/ achieved\nWhy?\n[Objective 3] - not/partially/ achieved\nWhy?",
+    "source": "[Template] Post Mortem Report 26_27.docx",
+    "section": "body",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 687
+    }
+  },
+  {
+    "id": "f06fe48dc9563e60",
+    "text": "Highlight 1 - describe what happened during the event that is notable e.g. does the student enjoyed; did the student engaged as expected?\n\nHighlight 2 - describe what happened during the event that is notable e.g. does the student enjoyed; did the student engaged as expected?\n\nHighlight 3 - describe what happened during the event that is notable e.g. does the student enjoyed; did the student engaged as expected?",
+    "source": "[Template] Post Mortem Report 26_27.docx",
+    "section": "What went well during the event?",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 415
+    }
+  },
+  {
+    "id": "7e1ec49fafd68ee2",
+    "text": "Issue 1 - what was the issue; how did it arise; what measure and resolution was taken at that point where the issue arose?\n\nIssue 2 - what was the issue; how did it arise; what measure and resolution was taken at that point where the issue arose?\n\nIssue 3 - what was the issue; how did it arise; what measure and resolution was taken at that point where the issue arose?\n\nRecommendations, Improvements and Precautions\n\nImprovements - elaborate if applicable; explain why this should be done\n\nRecommendations - elaborate if applicable; explain why this should be done\n\nPrecautions - elaborate if applicable; explain why this should be done\n\nPhotos\nAcknowledgement\nI, the undersigned hereby acknowledge that all information provided in this event proposal is correct and true at the point of time.\n\nPrepared by, | Approved by,\n[Name] | [Director Name]\nProject-Lead | Co-Project Lead | Director\nSunway University\nStudent Council | Sunway University Student Council",
+    "source": "[Template] Post Mortem Report 26_27.docx",
+    "section": "What did not went as planned or expected?",
     "chunk_index": 2,
     "metadata": {
-      "char_len": 354
+      "char_len": 961
+    }
+  },
+  {
+    "id": "19f1e9c2141e96dc",
+    "text": "Sunway University Student Council\nInitiative Proposal\n\nInitiative: [Initiative Name]\n\nIntroduction\n[Overview/ Executive summary of your initiatives - stating the the department that organise it, aims/ objective of the initiative, overall run down of the initiative]\n\nObjectives\nGeneral Objectives - for the Sunway Student Community\n[How do the students can be benefited from the your event]\n\nFor Sunway University Student Council (SUSC)\n[How do the SUSC can be benefited from the your event]\n\nInvolved Party\n\nOrganiser : [Department(s) involved]\nExternal Party : [Any potential and intended collaborator]\nTargeted Audience : [Who are you targeting for your event]\nTargeted No. of Pax : [Be ambitious and realistic on your targeted pax]\n\nEvent/ Initiative Details\n\nDate :\nTime : [Time for the event; exclude the time for set up and clean up]\nVenue :\n\nTentative Itinerary\nNote: Remember to include the agenda of preparation or the venue set up until clean up in this section for the event.\n\nTime | Event/Agenda Description\n\nInitiative Rundown\nNote: This section provides an outline and gist of what you are going to do at each agenda stated in the itinerary in Section 5. The goal of this section is to paint a more detailed and visualisable image of the event. When it is being read, the checker should be able to visualise what is going to happen at each agenda on the itinerary.\n\n[Agenda 1]\n[Description of what will be done during this agenda]\n\n[Agenda 2]\n[Description of what will be done during this agenda]\n\n[Agenda 3]\n[Description of what will be done during this agenda]\n\n[Agenda 4]\n[Description of what will be done during this agenda]\n\n[Agenda 5]\n[Description of what will be done during this agenda]",
+    "source": "[Template] Proposal 26_27.docx",
+    "section": "body",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 1709
+    }
+  },
+  {
+    "id": "c8d8f8efa0b16e02",
+    "text": "a]\n\n[Agenda 3]\n[Description of what will be done during this agenda]\n\n[Agenda 4]\n[Description of what will be done during this agenda]\n\n[Agenda 5]\n[Description of what will be done during this agenda] Overall Timeline\nNote: In this section, you will need to state the key and crucial dates, such as and not limited to, main post date, registration date, event dates, volunteer recruitment date, sponsor finalisation and so on.. The crucial dates depend on the nature of your event and it is your responsibility to identify and mark down these key dates. Your calendar should show an overview form the time you prepared this proposal and to the event day. Reconstruct the calendar when necessary\n\nSeptember 2024\n\nSunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday\n25 | 26 | 27 | 28 | 29 | 30 | 31\n1 | 2 | 3 | 4 | 5 | 6 | 7\n8 | 9 | 10 | 11 | 12 | 13 | 14\n15 | 16 | 17 | 18 | 19 | 20 | 21\n22 | 23 | 24 | 25 | 26 | 27 | 28\n29 | 30\n\nRoles and Responsibilities\nThis section serves as the general task delegation of your event task force (e.g. other executives of your department that are on board, executives from other departments, and any other external parties). You should be able to visualise how much manpower you need and how to sum up the task. Examples of roles are, and not limited to, project lead, co-project lead, programme coordinator/Games, PA/AV and so on.\n\nPICs | Roles and Responsibilities\n\nFloor Plan\nNote: Construct a floor plan, avoid drawing on your Ipads. Use other presentation software to generate your floor plan. You might need to scout the venue to get the actual visualisation.\n\nRisk Assessment\nNote: State the potential risk of your event and the likelihood of it to happen (high, moderate or low) and explain the preventive measure you will take\n\nRisk(s) | Prevention/ Solution\n\nBudgeting\n\nLink to Financial Breakdown Spreadsheet:\n\na. Estimated Revenue\n\nNo. | Estimated revenue | Quantity | Unit Price (RM) | Amount (RM)\n1.\nTotal\n\nB. Estimated Expenses\n\nNo. | Estimated Expenses | Quantity | Unit Price\n(RM) | Amount\n(RM)\n[Category of Expenses]\n1.\n2.\n3.\n[Category of Expenses]\n1.\n2.\n3.\n4.\n[Category of Expenses]\n1.\nTotal",
+    "source": "[Template] Proposal 26_27.docx",
+    "section": "body",
+    "chunk_index": 1,
+    "metadata": {
+      "char_len": 2163
+    }
+  },
+  {
+    "id": "966849a72151144a",
+    "text": "1.\nTotal\n\nB. Estimated Expenses\n\nNo. | Estimated Expenses | Quantity | Unit Price\n(RM) | Amount\n(RM)\n[Category of Expenses]\n1.\n2.\n3.\n[Category of Expenses]\n1.\n2.\n3.\n4.\n[Category of Expenses]\n1.\nTotal Net (Estimated Income – Estimated Expenses)\nTotal Contribution from SUSC | [to be filled up by treasurer]\nSubsidy Request from Student LIFE | [to be filled up by treasurer]\n\nAcknowledgement\nI, the undersigned hereby acknowledge that all information provided in this event proposal is correct and true at the point of time.\n\nPrepared by, | Checked by,\n[Name] | [Director Name]\nProject-Lead | Co-Project Lead | Director\nSunway University\nStudent Council | Sunway University Student Council\n\nApproved by | Endorsed by\nDashvin Kumar | Mr. Farhan\nPresident | Advisor\nSunway University Student Council | Student Life Department",
+    "source": "[Template] Proposal 26_27.docx",
+    "section": "body",
+    "chunk_index": 2,
+    "metadata": {
+      "char_len": 821
+    }
+  },
+  {
+    "id": "2ad8145a42ba1019",
+    "text": "SUNWAY UNIVERSITY STUDENT COUNCIL\nReimbursement Form\nName: | Bank:\nDate: | [Date of Purchase] | Account No:\nDepartment: | Event:\n\nThe item(s) and the amount to be claimed are as follows:\nItem | Quantity | Unit Price (RM) | Amount (RM)\n\nTotal Applied for Reimbursement =\n\nDescription of details:\nDate of Purchase:\n[Insert receipts here]\n\nApplicant,\n\n…………………………………….\nApplicant Name\nApplicant Position,\nSunway University Student Council\nDate:\n\nApproved by, Acknowledged by,\n\n……………………………………. …………………………………….\nIsalynn Teh Zyi Yenn Dashvin Kumar A/L Suresh Kumar\nTreasurer, President,\nSunway University Student Council Sunway University Student Council\nDate: Date:\n\nFOR OFFICE USE Payment received\nReimbursed on:\nDate:\nPayment method:\nSignature:",
+    "source": "[Template] Reimbursement Form 26_27.docx",
+    "section": "body",
+    "chunk_index": 0,
+    "metadata": {
+      "char_len": 738
     }
   }
 ]

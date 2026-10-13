@@ -37,8 +37,46 @@ def parse_pdf(path: Path) -> list[Page]:
     return pages
 
 
+def _iter_docx_blocks(doc):
+    """Yield paragraphs and tables in the order they appear in the document body.
+
+    python-docx exposes paragraphs and tables separately, which loses their
+    interleaving and drops table text entirely from a naive paragraph-only read.
+    Walking the body XML in order preserves both -- important for form/template
+    documents (reimbursement forms, meeting minutes) that are mostly tables.
+    """
+    from docx.oxml.table import CT_Tbl
+    from docx.oxml.text.paragraph import CT_P
+    from docx.table import Table
+    from docx.text.paragraph import Paragraph
+
+    body = doc.element.body
+    for child in body.iterchildren():
+        if isinstance(child, CT_P):
+            yield Paragraph(child, doc)
+        elif isinstance(child, CT_Tbl):
+            yield Table(child, doc)
+
+
+def _table_to_text(table) -> str:
+    """Render a table as newline-separated rows, cells joined by ' | '."""
+    lines: list[str] = []
+    for row in table.rows:
+        cells = [cell.text.strip() for cell in row.cells]
+        # Collapse the common case of a cell repeated across merged columns.
+        deduped: list[str] = []
+        for cell in cells:
+            if cell and (not deduped or deduped[-1] != cell):
+                deduped.append(cell)
+        if deduped:
+            lines.append(" | ".join(deduped))
+    return "\n".join(lines)
+
+
 def parse_docx(path: Path) -> list[Page]:
     from docx import Document
+    from docx.table import Table
+    from docx.text.paragraph import Paragraph
 
     doc = Document(str(path))
     pages: list[Page] = []
@@ -50,15 +88,20 @@ def parse_docx(path: Path) -> list[Page]:
         if joined:
             pages.append(Page(source=path.name, section=current_section, text=joined))
 
-    for para in doc.paragraphs:
-        style = (para.style.name or "").lower() if para.style else ""
-        if style.startswith("heading") or style == "title":
-            # A heading starts a new section.
-            flush()
-            buffer = []
-            current_section = para.text.strip() or current_section
-        else:
-            buffer.append(para.text)
+    for block in _iter_docx_blocks(doc):
+        if isinstance(block, Paragraph):
+            style = (block.style.name or "").lower() if block.style else ""
+            if style.startswith("heading") or style == "title":
+                # A heading starts a new section.
+                flush()
+                buffer = []
+                current_section = block.text.strip() or current_section
+            else:
+                buffer.append(block.text)
+        elif isinstance(block, Table):
+            table_text = _table_to_text(block)
+            if table_text:
+                buffer.append(table_text)
     flush()
     return pages
 
