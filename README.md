@@ -109,21 +109,6 @@ GROQ_API_KEY=ollama
 The same `chat()` function talks to both — only config changes. (Ollama is
 dev-only; it never runs on Vercel.)
 
-## 4. Deployment (Vercel Hobby, free, no card)
-
-1. Push this repo to GitHub (public).
-2. Import it at [vercel.com](https://vercel.com) (GitHub sign-in).
-3. Set environment variables in the Vercel dashboard: `GROQ_API_KEY`,
-   `LLM_MODEL`, and optionally `RETRIEVAL_MODE`.
-4. Deploy. `vercel.json` routes `/api/*` to the Python function and serves
-   `public/` statically. Only `api/requirements.txt` (slim) affects the function.
-
-**Size limit:** the function must stay under 250 MB unzipped. Run the check
-**early** (see [`scripts/size_check.md`](scripts/size_check.md) and
-`python scripts/estimate_api_size.py`). If `fastembed` doesn't fit, set
-`RETRIEVAL_MODE=bm25` in Vercel — the engine auto-degrades to BM25-only and the
-full dense/hybrid pipeline stays in the local ablation study.
-
 ## 5. Design decisions
 
 | Decision | Why |
