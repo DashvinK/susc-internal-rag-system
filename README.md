@@ -236,8 +236,15 @@ Report Vercel **cold-start** and **warm-request** latency separately (hit
 - fastembed query embeddings (ONNX) vs sentence-transformers index embeddings
   (PyTorch) are the same model but not bit-identical; any tiny retrieval
   difference is documented by the eval, not hidden.
-- Refusal threshold is tuned on a small hand-written set — risk of overfitting;
-  noted and re-checked on the real corpus.
+- **Refusal is primarily LLM-driven.** The pre-LLM confidence threshold is a
+  cheap backstop, not the main gate. Measured on the sample corpus,
+  `bge-small-en-v1.5` compresses cosine similarities into ~[0.40, 0.85] — even a
+  clearly off-topic query ("how do I bake a cake?") scores ~0.46 — so a low
+  absolute threshold rarely fires. The LLM, instructed to answer only from
+  sources and otherwise say "I can't find that…", is what actually refuses
+  unanswerable-but-on-topic questions (e.g. "what's the Wi-Fi password?"). The
+  threshold is left conservative to avoid false refusals and is a **Week-5
+  tuning task on the real corpus** (risk of overfitting a small set is noted).
 - Cold starts can make the first request slow; a short demo video is recommended
   alongside the live URL.
 
